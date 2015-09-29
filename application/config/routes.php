@@ -38,10 +38,11 @@
 |
 */
 
-$route['default_controller'] = "site";
+$route['default_controller'] = "login";
 $route["home"] = 'site/home'; 
 $route["about"] = 'site/about'; 
 $route["contact"] = 'site/contact'; 
+
 $route['404_override'] = '';
 
 

@@ -14,6 +14,7 @@
             <li><a href="#">About</a></li> 
             <li><a href="#">Contact</a></li>
         </ul>
+        
     </div>
     <div id="content">
         <h1>Home page</h1>
