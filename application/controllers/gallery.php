@@ -3,19 +3,18 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Upload extends CI_Controller
+class Gallery extends CI_Controller
 {
 
     public function index()
     {
         $this->load->model("gallery_model");
-        $this->load->view("upload");
+
         if ($this->input->post("upload")) {
-           $this->gallery_model->do_upload();  
+            $this->gallery_model->do_upload();
         }
+        $data['images'] = $this->gallery_model->get_images();
+        $this->load->view("gallery_view",$data);
     }
 
-    
-    
 }
-

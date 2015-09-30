@@ -16,7 +16,7 @@
             name: $('#name').val(),
             email: $('#email').val(),
             message: $('#message').val(),
-  
+            ajax: "1"
         };
 
         $.ajax({
@@ -24,8 +24,9 @@
             type: "POST",
             data: form_data,
             success: function(msg) {
-                 $('body').html(msg);
+                $('body').html(msg);
             }
+
         });
         return false;
 

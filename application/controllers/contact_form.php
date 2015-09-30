@@ -14,7 +14,7 @@ class Contact_form extends CI_Controller
         $name = $this->input->post('name');
 
 
-        $data['main_content'] = 'site';
+        $data['main_content'] = 'contact_submit';
         if ($this->input->post('name')) {
             $this->load->view($data['main_content']);
         } else {
